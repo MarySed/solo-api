@@ -1,0 +1,45 @@
+{
+  "name": "solo_api",
+  "version": "1.0.0",
+  "license": "MIT",
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
+  "scripts": {
+    "migrate": "knex migrate:latest --knexfile ./knexfile.js",
+    "rollback": "knex migrate:rollback --knexfile ./knexfile.js ",
+    "seed": "knex seed:run",
+    "test": "mocha ./tests/test.js",
+    "start": "node server/index.js",
+    "dev": "nodemon server/index.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "chai-graphql": "^4.0.0",
+    "chai-http": "^4.3.0",
+    "eslintrc": "^1.0.6",
+    "express": "^4.16.4",
+    "express-graphql": "^0.7.1",
+    "graphql": "^14.1.1",
+    "knex": "^0.20.0",
+    "moment": "^2.22.2",
+    "morgan": "^1.9.1",
+    "pg": "^7.5.0"
+  },
+  "devDependencies": {
+    "chai": "^4.0.2",
+    "eslint": "^6.6.0",
+    "eslint-config-prettier": "^6.4.0",
+    "eslint-config-problems": "^1.1.0",
+    "eslint-plugin-prettier": "^3.0.0",
+    "husky": "^1.1.2",
+    "mocha": "^5.2.0",
+    "nodemon": "^1.18.9",
+    "prettier": "1.18.2",
+    "pretty-quick": "^1.4.1",
+    "sqlite3": "^4.0.9"
+  }
+}

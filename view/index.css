@@ -1,0 +1,33 @@
+body {
+  background-color: white;
+  background-size: cover;
+  color: black;
+  font-family: monospace;
+  font-size: large;
+}
+
+p {
+  margin-top: 10%;
+  text-align: center;
+}
+
+iframe {
+  margin-top: 100px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+img {
+  display: block;
+  width: 30%;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  position: center;
+}
+
+a {
+  color: black;
+  font-size: 50px;
+  margin-right: 95%;
+}
