@@ -109,16 +109,21 @@ yarn add pg
 Once you've finished setting everything up, run `yarn dev` in the terminal to start the server.
 If you open the `index.html` file in your browser, you'll be able to see the GraphiQL terminal.
 
+I've listed a few of the commands available to you below.
+
 ### Adding books:
 
 ```bash
-AddBook(book_name: "name", author_firstname: "firstname", author_lastname: "lastname", genre: "genre", review: "review", rating: "rating")
+AddBook(input: {
+    book_name: "bookName"
+    ...etc.
+})
 ```
 
 ### Deleting books:
 
 ```bash
-DeleteBook(book_id: id)
+DeleteBook(book_id: "id")
 
 ```
 
