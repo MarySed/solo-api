@@ -12,7 +12,7 @@ type Books {
   author_lastname: String
   genre: String
   review: String
-  rating: Int
+  rating: String
 }
 
 input InputBooks {
@@ -22,7 +22,7 @@ input InputBooks {
   author_lastname: String
   genre: String
   review: String
-  rating: Int
+  rating: String
 }
 
 type Query {

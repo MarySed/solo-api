@@ -118,7 +118,7 @@ AddBook(book_name: "name", author_firstname: "firstname", author_lastname: "last
 ### Deleting books:
 
 ```bash
-DeleteBook(book_name: "bookname")
+DeleteBook(book_id: id)
 
 ```
 

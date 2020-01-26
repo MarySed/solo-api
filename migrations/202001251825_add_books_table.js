@@ -12,7 +12,7 @@ exports.up = function(knex) {
 
     t.text("review"); //using text for larger input
 
-    t.integer("rating");
+    t.string("rating");
   });
 };
 
