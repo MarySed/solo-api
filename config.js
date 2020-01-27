@@ -1,6 +1,4 @@
 module.exports = {
-  // database connection configs
-  // You might want to update this
   db: {
     client: "pg",
     connection: process.env.DB_URL || {
@@ -12,12 +10,10 @@ module.exports = {
     }
   },
 
-  // port for server to run on
   express: {
     port: process.env.PORT || 3000
   },
 
-  // timestamp format for our logs
   logger: {
     format: "dddd MMMM Do YYYY, h:mm:ss"
   }
